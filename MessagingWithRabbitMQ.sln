@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQClient.Console", "RabbitMQ.Client\RabbitMQClient.Console.csproj", "{24038E96-53E9-4644-8FD5-BB21DB0AF958}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - RabbitMQ.Client", "1 - RabbitMQ.Client", "{F438AEB3-3F90-4900-BED1-190C058FEB9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24038E96-53E9-4644-8FD5-BB21DB0AF958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24038E96-53E9-4644-8FD5-BB21DB0AF958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24038E96-53E9-4644-8FD5-BB21DB0AF958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24038E96-53E9-4644-8FD5-BB21DB0AF958}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24038E96-53E9-4644-8FD5-BB21DB0AF958} = {F438AEB3-3F90-4900-BED1-190C058FEB9C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {516F89F6-1B9A-4DE5-AA2F-301425767C27}
+	EndGlobalSection
+EndGlobal
