@@ -1,4 +1,5 @@
-﻿using RabbitMQ.Client;
+﻿using MessagingEvents.Shared.Models;
+using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 using System.Text.Json;
@@ -30,6 +31,7 @@ var consumer = new EventingBasicConsumer(consumerChannel);
 consumer.Received += (sender, eventArgs) =>
 {
     var contentArray = eventArgs.Body.ToArray();
+
     var contentString = Encoding.UTF8.GetString(contentArray);
 
     var message = JsonSerializer.Deserialize<Person>(contentString);
@@ -42,17 +44,3 @@ consumer.Received += (sender, eventArgs) =>
 consumerChannel.BasicConsume(queue: "person-created", autoAck: false, consumer);
 
 Console.ReadLine();
-
-class Person
-{
-    public Person(string fullName, string document, DateTime birthDate)
-    {
-        FullName = fullName;
-        Document = document;
-        BirthDate = birthDate;
-    }
-
-    public string FullName { get; set; }
-    public string Document { get; set; }
-    public DateTime BirthDate { get; set; }
-}
