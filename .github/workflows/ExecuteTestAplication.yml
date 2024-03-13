@@ -28,9 +28,5 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: List files in directory
-        run: ls -al
-      - name: Show current directory
-        run: pwd
       - name: Run RabbitMQ
-        run: docker-compose -f main/docker-compose.yml up -d
+        run: docker-compose -f DevAlanM/MessagingWithRabbitMQ/docker-compose.yml up -d
