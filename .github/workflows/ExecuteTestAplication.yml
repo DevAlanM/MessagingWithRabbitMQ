@@ -28,5 +28,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: List files in directory
+        run: ls -al
+    
       - name: Run RabbitMQ
         run: docker-compose -f docker-compose up -d
