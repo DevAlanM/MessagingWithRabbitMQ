@@ -24,6 +24,7 @@ channel.BasicPublish(EXCHANGE, routingKey: "hr.person-created", basicProperties:
 
 Console.WriteLine($"Message published: {json}");
 
+
 var consumerChannel = connection.CreateModel();
 
 var consumer = new EventingBasicConsumer(consumerChannel);
