@@ -29,5 +29,4 @@ jobs:
     needs: build
     steps:
       - name: Run RabbitMQ
-        run: |
-          docker-compose -f docker-compose.yml up -d
+        run: docker-compose -f docker-compose up -d
