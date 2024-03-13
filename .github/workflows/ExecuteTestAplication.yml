@@ -30,6 +30,7 @@ jobs:
     steps:
       - name: List files in directory
         run: ls -al
-    
+      - name: Show current directory
+        run: pwd
       - name: Run RabbitMQ
         run: docker-compose -f main/docker-compose.yml up -d
